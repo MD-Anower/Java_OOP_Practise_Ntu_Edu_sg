@@ -14,6 +14,7 @@ public class MyPoint_2_6 {
         this.y = y;
     }
 
+
     public int getX() {
         return x;
     }
@@ -54,7 +55,7 @@ public class MyPoint_2_6 {
         return df2.format(ans);
     }
     public String distance(MyPoint_2_6 another){
-        DecimalFormat df3 = new DecimalFormat("#.###");
+        DecimalFormat df3 = new DecimalFormat("#.####");
 
         return df3.format(Math.sqrt((this.x-another.x) * (this.x-another.x) +
                 (this.y - another.y) * (this.y - another.y)));
